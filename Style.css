@@ -36,6 +36,7 @@ nav {
     align-items: center;
     background: rgb(46, 46, 46);
     height: 5vh;
+    margin-bottom: 2%;
 }
 .menu{
     background: none;
@@ -92,39 +93,38 @@ nav {
     flex-wrap: nowrap;
     justify-content: space-around;
 }
-
-.contact {
+.projectbox{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    
-    position: relative;
-    padding-bottom: 2vh;
-    margin-top: 2vh;
-    background-color: rgba(0, 0, 0, 0);
-    text-transform: uppercase;
-    text-decoration: none;
-    min-height: 15vh;
-    background: rgb(46, 46, 46);
+    margin: 0 auto;
+    max-width: 1500px;
+    gap: 50px;
+   
+}
+.projectbox > h2{
+    margin-top: 25px;
+    text-align: center;
+}
+.projectbox-inner{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-evenly;
+}
+.projectbox-img-container{
+    width: 30%;
+}
+.projectbox-img-container > img{
+    width: 100%;
+    object-fit: contain;
+}
+.projectbox-textcon{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    font-size: 120%;
 }
 
-#contact-info {
-    margin-top: 1vh;
-    float: left;
-    display: flex;
-    color: #ffffff;
-    align-items: auto;
-    justify-content: center;
-}
 
-#contacth3 {
-    display: flex;
-    align-items: end;
-}
-.contact > a{
-    display: flexbox;
-    ;
-}
 
 .project1 {
     display: flex;
@@ -149,7 +149,7 @@ nav {
 
 .projectWrapper{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-bottom: 100px;
 }
 
@@ -161,4 +161,14 @@ nav {
     width: 50%;
     padding: 0 50px;
 
+}
+.sitepics{
+    display: flex;
+    flex-direction: row;
+
+}
+.contact {
+    text-align: center;
+    font-size: 110%;
+    flex-direction: column;
 }
