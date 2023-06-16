@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jason Siegersma</title>
     <link rel="stylesheet" href="Style.css">
+    <script defer src="modal.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
             <a class="nav-items" href="index.html">Projects</a>
             <a class="nav-items" href="#contact">Contact</a>
             <a class="nav-items" href="#AbtmeNav">About Me</a>
-            
+
         </div>
 
     </nav>
@@ -31,78 +32,136 @@
         </h3>
     </div>
 
-    <div id="projects">
-
-        <h2>
-            Projects
-        </h2>
-        <div class="projects-inner">
-            <div class="proj-container">
-                <p class="title">Project BO-space</p>
-                <a href="Bo-Space.html">
-                    <img src="img/orbitx.png" width="350" height="250">
-                </a>
+    <div id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-wrapper">
+            <div class="projects-inner">
+                <div class="proj-container">
+                    <p class="title">Neon Game Studio</p>
+                    <button id="myBtn" class="myBtn"><img class="modal-image" src="img/neongamestudiologo.jpg"></button>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h1 class="modal-title">Neon Game Studio</h1>
+                            <h5 class="modal-subtitle">-Project Starfall-</h5>
+                            <a href="https://www.neongamestudio.com/">NeonGameStudio</a>
+                            <br>
+                            <br>
+                            <p class="modal-text"> Neon Game Studio is a hybrid learning environment where you are from 9AM - 5PM working on the game.
+                                <br>
+                                You work with professionals on an actual game and get the learning experience for your intership.
+                                <br>
+                                I have worked on multiple userstories in my time being there.
+                                worked on the base of the enemyAI, OctoMonster, StateMachine, Animator, Movement, AI Behavior and a Radial Stamina bar.
+                                <br>
+                                In my time being there I have learned alot of valuable lessons and skills, I improved in Unity, Blender, AI's, StateMachines, Animators and understanding mass movement.
+                                <img src="img/ngspic.jpg">
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="proj-container">
-                <p class="title">Project Vertical Slice</p>
-                <a href="VerticalSliceCarto.html">
-                    <img src="img/carto img.jpg" width="350" height="250">
-                </a>
+            <div class="projects-inner">
+                <div class="proj-container">
+                    <p class="title">OrbitX</p>
+                    <button id="myBtn1" class="myBtn"><img class="modal-image" src="img/orbitx.png"></button>
+                    <div id="myModal1" class="modal">
+                        <div class="modal-content">
+                            <span class="close1">&times;</span>
+                            <h1 class="modal-title">OrbitX</h1>
+                            <h5 class="modal-subtitle">-College Project-</h5>
+                            <br></br>
+                            <p class="modal-text">BO-Space was a group assignment given to Game Developers and Artists to develop a game in 8 weeks and
+                            see
+                            what they could make with their current skills.
+                            <br>
+                            I was in group 9. We worked on a Adventure Horror in game and as theme we had space.
+                            My part in this game was working on the AI and its behavior.
+                            <img src="img/orbitx.png" width="300" height="300">
+                        </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="proj-container">
-                <p class="title">Tower Defense</p>
-                <a href="TowerDefense.html">
-                    <img src="img/towerdefenselogo.jpg" width="350" height="250">
-                </a>
+            <div class="projects-inner">
+                <div class="proj-container">
+                    <p class="title">Vertical Slice Carto</p>
+                    <button id="myBtn2" class="myBtn"><img class="modal-image" src="img/carto img.jpg"></button>
+                    <div id="myModal2" class="modal">
+                        <div class="modal-content">
+                            <span class="close2">&times;</span>
+                            <h1 class="modal-title">Vertical Slice</h1>
+                            <h5 class="modal-subtitle">-College Project-</h5>
+                            <a href="https://github.com/stenkristel/Vertical-Slice-Carto">Vertical Slice Carto</a>
+                            <br></br>
+                            <p class="modal-text">This project I worked on recreating 10 seconds of the game Carto.
+                                <br>
+                                It was a joint project with 2 courses Game Artists and Game Developers.
+                                I worked on AI and worked on my leadership skills in this project.
+                                We had to explain the artists how github worked
+                                <br>
+                                <img src="img/carto img.jpg" width="300" height="300"> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="proj-container">
-                <p class="title">Neon Game Studio</p>
-                <a href="NGSproject.html">
-                    <img src="img/neongamestudiologo.jpg" width="350" height="250">
-                </a>
+            <div class="projects-inner">
+                <div class="proj-container">
+                    <p class="title">Tower Defense</p>
+                    <button id="myBtn3" class="myBtn"><img class="modal-image" src="img/towerdefenselogo.jpg"></button>
+                    <div id="myModal3" class="modal">
+                        <div class="modal-content">
+                            <span class="close3">&times;</span>
+                            <h1 class="modal-title">Tower Defense</h1>
+                            <h5 class="modal-subtitle">-College Project-</h5>
+                            <a href="https://github.com/j5x/BO-TD">GitHub</a>
+                            <br></br>
+                            <p class="modal-text">
+                                Tower Defense is a game i made in the first period of my second year at Mediacollege Amsterdam.
+                                <br>
+                                The game was 10 weeks in Development, I learned how the unity instantiate system worked and how component linking worked.
+                                <br>
+                                if you op my github then you can see all the struggles i went through in the making of this project.
+                                <br>
+                                The project was a stepping stone to my improvement my development skills and I learned alot from it.
+                                
+                                <img src="img/towerdefense.PNG" width="300" height="300">
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="proj-container">
-                <p class="title">Coming soon...</p>
-                <a href="Bo-Space.html">
-                    <img src="img/placeholder-image.png" width="350" height="250">
-                </a>
+            <div class="projects-inner">
+                <div class="proj-container">
+                    <p class="title">Coming soon...</p>
+                    <button id="myBtn4" class="myBtn"><img class="modal-image" src="img/placeholder-image.png"></button>
+                    <div id="myModal4" class="modal">
+                        <div class="modal-content">
+                            <span class="close4">&times;</span>
+                            <h1 class="modal-title">Coming Soon...</h1>
+                            <h5 class="modal-subtitle">-Coming Soon...</h5>
+                            <br></br>
+                            <p class="modal-text"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="proj-container">
-                <p class="title">Coming soon...</p>
-                <a href="Bo-Space.html">
-                    <img src="img/placeholder-image.png" width="350" height="250">
-                </a>
+            <div class="projects-inner">
+                <div class="proj-container">
+                    <p class="title">Coming Soon...</p>
+                    <button id="myBtn5" class="myBtn"><img class="modal-image" src="img/placeholder-image.png"></button>
+                    <div id="myModal5" class="modal">
+                        <div class="modal-content">
+                            <span class="close5">&times;</span>
+                            <h1 class="modal-title">Coming Soon...</h1>
+                            <h5 class="modal-subtitle">Coming Soon...</h5>
+                            <br></br>
+                            <p class="modal-text"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-        </div>
-
-        <div class="About-me">
-            <h2 id="AbtmeNav">
-                About me
-            </h2>
-            <br>
-            <p id="introdev">
-                Hello! My name is Jason Siegersma, I live in Edam-Volendam, currently 17 years old.
-                <br>
-                I am currently attending college at Mediacollege Amsterdam, where i am doing a Software Development
-                course.  I am a developer who is still looking what he specializes in.
-                <br>
-                I want to become an developer who works mainly with AI's and gameplay, but i am open for other options.
-                <br>
-            </p> <br>
-            <p id="hobby">
-                I also do video editing in my free time and sound editing but thats just a hobby. 
-            </p> <br>
-            <p id="sports">
-                In my free time i like exercising and improving myself, I live by my rule: Aspire before you expire.
-                <br>
-                I play sports, boxing and basketball.
-            </p>
-
-        </div>
-
-
-    </div>
 
     <footer class="contact" id="contact">
         <h1 id="contact-info">Contact</h1>
@@ -110,7 +169,7 @@
             Email: siegersmajason@gmail.com
             <br>
             <br>
-            
+
         </h3>
         <a href="https://linktr.ee/jsnx2k">These are my socials</a>
 
