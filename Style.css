@@ -226,26 +226,36 @@ nav {
 .image-container.active {
     z-index: 99;
 }
+.middlesection{
+    height: 10vh;
+}
 #bottomsection{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+   
+}
+
+#bottomsection > h1{
+    padding-top: 5vw;
+    font-size: 2vw;
 }
 
 .aboutMe{
-    height: 20vh;
+    height: 40vh;
     padding-top: 10vw;
     padding-bottom: 10vw;
     display: flex;
     align-items: center;
-    background-color: gray;
-    padding-left: 10px;
+    font-size:1.2vw;
+    padding-left: 5vw;
+
     
 }
 .aboutMe > img{
     max-width:40vw;
     height: 40vh;
+    padding: 2vw;
     
 }
 .footer{
