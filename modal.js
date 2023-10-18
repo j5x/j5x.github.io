@@ -7,6 +7,8 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+const allModals = document.getElementsByClassName("modal");
+
 
 btn.onclick = function() {
   modal.style.display = "block";
@@ -141,3 +143,13 @@ window.onclick = function(event) {
     modal5.style.display = "none";
   }
 }
+
+function modalCloseFunction(modal) {
+  return (function(event) {
+      if(event.target == modal)
+        modal.querySelector("#close").click();
+  });
+}
+
+for(modal of allModals)
+  modal.addEventListener("click", modalCloseFunction(modal));

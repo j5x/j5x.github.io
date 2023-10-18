@@ -71,14 +71,13 @@ nav {
 
 .projects{
     width: 100%;
-    padding-top: 10vw;
-    padding-bottom: 10vw;
+    padding-bottom: 5vw;
     color:white;    
 }
 
 .projects>h2 {
     text-align: center;
-    padding: 15px;
+    
 }
 .projects>h3{
     text-align:center;
@@ -89,6 +88,8 @@ nav {
     justify-content: space-evenly;
     grid-template-columns: repeat(3, 1fr);
     gap: 1vw;
+    
+    padding: 4vw;
 }
 
 .projects-inner {
@@ -100,19 +101,20 @@ nav {
 }
 
 .proj-container>.title {
-    margin-bottom: 0.7vw;
+    margin-bottom: 1vw;
     font-size: 130%;
 
 }
 
 
 .proj-container {
-    margin-top: 25vh;
+    margin-top: 20vh;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    padding: 5vw;
+    padding: 3vw;
+    
 
 }
 .modal {
@@ -230,7 +232,7 @@ nav {
     z-index: 99;
 }
 .middlesection{
-    height: 10vh;
+    height: 5vh;
 }
 #bottomsection{
     display: flex;
@@ -247,7 +249,7 @@ nav {
 .aboutMe{
     height: 40vh;
     padding-top: 10vw;
-    padding-bottom: 10vw;
+    padding-bottom: 5vw;
     display: flex;
     align-items: center;
     font-size:1.2vw;
@@ -265,7 +267,7 @@ nav {
    display: flex;
    flex-direction: column;
    padding-left: 5vw;
-   padding-top: 20vw;
+   padding-top: 10vw;
    padding-bottom: 3vw;
    
    align-self: flex-start;
