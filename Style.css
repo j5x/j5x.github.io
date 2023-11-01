@@ -101,7 +101,7 @@ nav {
 }
 
 .proj-container>.title {
-    margin-bottom: 1vw;
+    margin-top: .5vw;
     font-size: 130%;
 
 }
@@ -113,7 +113,7 @@ nav {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    padding: 3vw;
+    padding: 5vw;
     
 
 }
