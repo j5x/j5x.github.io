@@ -22,9 +22,6 @@ a{
 a:hover{
     background-color: rgba(255, 255, 255, 0.349);
 }
-.homepageredirect{
-    color: white;
-}
 
 
 
@@ -56,7 +53,6 @@ nav {
     color: white;
     text-decoration: none;
     font-size: 120%;
-    padding: 1vw;
 }
 
 .nav-items:hover{
@@ -72,13 +68,14 @@ nav {
 
 .projects{
     width: 100%;
-    padding-bottom: 5vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
     color:white;    
 }
 
 .projects>h2 {
     text-align: center;
-    
+    padding: 15px;
 }
 .projects>h3{
     text-align:center;
@@ -89,8 +86,6 @@ nav {
     justify-content: space-evenly;
     grid-template-columns: repeat(3, 1fr);
     gap: 1vw;
-    
-    padding: 4vw;
 }
 
 .projects-inner {
@@ -102,20 +97,19 @@ nav {
 }
 
 .proj-container>.title {
-    margin-top: .5vw;
+    margin-bottom: 0.7vw;
     font-size: 130%;
 
 }
 
 
 .proj-container {
-    margin-top: 20vh;
+    margin-top: 25vh;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     padding: 5vw;
-    
 
 }
 .modal {
@@ -232,45 +226,33 @@ nav {
 .image-container.active {
     z-index: 99;
 }
-.middlesection{
-    height: 5vh;
-}
 #bottomsection{
     display: flex;
     flex-direction: column;
     align-items: center;
-   
-}
-
-#bottomsection > h1{
-    padding-top: 5vw;
-    font-size: 2vw;
+    
 }
 
 .aboutMe{
-    height: 40vh;
-    padding: 10vw;
+    height: 20vh;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
     display: flex;
     align-items: center;
-    font-size:1.2vw;
-
-
+    background-color: gray;
+    padding-left: 10px;
     
 }
 .aboutMe > img{
     max-width:40vw;
     height: 40vh;
-    padding: 2vw;
     
-}
-.aboutMe > p{
-    font-size: 1.2vw;
 }
 .footer{
    display: flex;
    flex-direction: column;
    padding-left: 5vw;
-   padding-top: 10vw;
+   padding-top: 20vw;
    padding-bottom: 3vw;
    
    align-self: flex-start;
