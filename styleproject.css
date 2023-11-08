@@ -13,6 +13,11 @@
     color: white;
   }
   
+  a {
+    text-decoration: none;
+    
+  }
+  
   #space{
     background-image: url(img/spaceMainMenu.jpg);
   }
@@ -137,19 +142,20 @@
   }
  
 
-#contact {
+  #contact {
     background-color: #2c2b2b;
     text-align: center;
     padding: 2%;
+    margin: 0; /* Reset margin to remove any default spacing */
 }
 
-#contact>p {
-    background-color: #2c2b2b;
+#contact h1, #contact h3 {
+    margin: 0; /* Reset margin to remove any default spacing */
 }
 
 footer {
     background-color: #333333;
     text-align: center;
-    padding: 2%;
+    padding: 1%; /* Adjust the padding as needed */
     display: block;
 }
