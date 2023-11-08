@@ -230,13 +230,13 @@ section {
     max-height: 500px;
 }
 
-#Contact {
+#contact {
     background-color: #2c2b2b;
     text-align: center;
     padding: 2%;
 }
 
-#Contact>p {
+#contact>p {
     background-color: #2c2b2b;
 }
 
