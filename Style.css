@@ -56,6 +56,7 @@ nav {
     color: white;
     text-decoration: none;
     font-size: 120%;
+    padding: 1vw;
 }
 
 .nav-items:hover{
@@ -248,12 +249,11 @@ nav {
 
 .aboutMe{
     height: 40vh;
-    padding-top: 10vw;
-    padding-bottom: 5vw;
+    padding: 10vw;
     display: flex;
     align-items: center;
     font-size:1.2vw;
-    padding-left: 5vw;
+
 
     
 }
