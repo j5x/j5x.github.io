@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Siegersma</title>
+    <link rel="stylesheet" href="Style.css">
+    <script defer src="modal.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="homepageredirect">
+            <h1 class="name">
+                Jason Siegersma
+            </h1>
+            <h5>Game Developer</h5>
+        </a>
+        <div class="menu">
+            <a class="nav-items" href="#projects">Projects</a>
+            <a class="nav-items" href="#contact">Contact</a>
+            <a class="nav-items" href="#bottomsection">About Me</a>
+            <a class="nav-items" href="img/CV.png">CV</a>
+        </div>
+
+    </nav>
+    <div class="introHeader">
+        <h1>
+            Welcome to my Portfolio
+        </h1>
+        <h3>
+            Game Developer
+        </h3>
+    </div>
+
+
+    <div id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-wrapper">
+            <div class="projects-inner">
+                <div class="proj-container">
+                    <p class="title">Neon Game Studio</p>
+                    <a href="NGSproject.html">
+                        <button id="myBtn" class="myBtn"><img class="modal-image"
+                                src="img/neongamestudiologo.jpg"></button>
+                    </a>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">`
+                            <span id="close" class="close">&times;</span>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-inner">
+                <div class="proj-container">
+                    <p class="title">Project Launcher</p>
+                    <button id="myBtn2" class="myBtn"><img class="modal-image" src="img/gamelauncher.jpg"></button>
+                    <div id="myModal2" class="modal">
+                        <div class="modal-content">
+                            <span id="close" class="close2">&times;</span>
+                            <h1 class="modal-title">Game Launcher
+                            </h1>
+                            <ul class="box">
+                                <div>
+                                    <h2>Intro</h2>
+                                    <div class="modal-island">
+                                        <p class="modal-text">
+                                            The development of the game launcher in C# was quite a challenge, but I
+                                            managed to make some great strides. I chose C# initially because it works
+                                            well with the Unreal Engine, which is what I used for the game. I had to
+                                            work with the WebClient class and the GitHub API to make the downloading and
+                                            extraction process smooth.
+
+                                            <br>
+                                            <br>
+
+                                            At the beginning, I had to set up the environment carefully and make sure
+                                            the UI components were working smoothly. One of the trickiest parts was
+                                            getting the download feature right. I had to figure out how to handle file
+                                            downloads, extractions, and potential errors. Adding the SaveFileDialog was
+                                            a game-changer because it made it possible for users to choose where to save
+                                            their downloads.
+                                        </p>
+                                        <div class="modal-imgs">
+                                            <img src="img/GameLauncher/GameBoot.jpg" />
+                                        </div>
+                                        <br>
+                                        <br>
+                                    </div>
+                                    <h2>Development</h2>
+                                    <div class="modal-island">
+                                        <p class="modal-text">
+                                            As the development process unfolded, ensuring seamless compatibility of
+                                            various components, including the progress bar, necessitated persistent
+                                            troubleshooting and diligent debugging efforts. Moreover, the intricate
+                                            handling of exceptions, notably the NullReferenceException, demanded a
+                                            comprehensive understanding of the code's intricacies and meticulous
+                                            attention to detail.
+
+                                            <br>
+                                            <br>
+
+                                            As we kept working, we ran into some issues with the progress bar and had to
+                                            spend some time troubleshooting and debugging(The progress bar will be
+                                            readded later). Dealing with exceptions like
+                                            the NullReferenceException was a bit tricky, and we had to pay close
+                                            attention to the details in the code.
+                                        </p>
+                                        <div class="modal-imgs">
+                                            <img src="img/GameLauncher/Gamelauncher.jpg" />
+                                        </div>
+                                    </div>
+                                    <h2>Code/Conclusion</h2>
+                                    <div class="modal-island">
+                                        <p class="modal-text">
+                                            We also had some trouble with files getting locked during the build process.
+                                            It taught us the importance of managing resources properly and handling file
+                                            access carefully. We had to go deep into the build process to make sure
+                                            nothing was causing problems.
+
+                                            <br>
+                                            <br>
+
+                                            Despite these challenges, we adopted an iterative approach, did a lot of
+                                            testing, and learned a great deal about C# and the GitHub API. This project
+                                            has really shown us the importance of perseverance, creative
+                                            problem-solving, and paying attention to detail, especially in a
+                                            college-level software development setting.
+                                        </p>
+                                        <div class="modal-imgs">
+                                            <img src="img/GameLauncher/GLCode.jpg" />
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/j5x/ProjectLauncher" target="_blank">GitHub</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-inner">
+                <div class="proj-container">
+                    <p class="title">Tower Defense</p>
+                    <button id="myBtn3" class="myBtn"><img class="modal-image" src="img/towerdefenselogo.jpg"></button>
+                    <div id="myModal3" class="modal">
+                        <div class="modal-content">
+                            <span class="close3" id="close">&times;</span>
+                            <h1 class="modal-title">Tower Defense</h1>
+                            <h5 class="modal-subtitle">-College Project-</h5>
+                            <a href="https://github.com/j5x/BO-TD" target="_blank">GitHub</a>
+                            <h1>Tower Defense Game</h1>
+                            <br>
+                            <h2>Introduction</h2>
+                            <div class="modal-island">
+                                <p class="modal-text">
+
+
+                                    Developing the Tower Defense game in Unity presented various challenges that I
+                                    successfully tackled. I opted for Unity as it provides a versatile platform for game
+                                    development. Understanding the intricacies of the Unity engine and C# programming
+                                    was
+                                    fundamental in creating a smooth gaming experience. Implementing effective tower
+                                    management systems and enemy AI were key highlights of the development process.
+                                </p>
+                                <div class="modal-imgs">
+                                    <img src="img/towerdefense.PNG" />
+                                </div>
+                            </div>
+
+                            <h2>Development</h2>
+                            <div class="modal-island">
+                                <p class="modal-text">
+
+                                    Throughout the development phase, ensuring seamless integration of diverse game
+                                    components such as tower mechanics, enemy behavior, and wave spawning required
+                                    meticulous debugging and persistent testing. Handling complex AI behaviors and
+                                    optimizing game performance were essential aspects that I focused on during the
+                                    development process.
+
+                                    The iterative approach adopted during the game's construction allowed for thorough
+                                    testing and debugging, resulting in a robust and engaging gameplay experience for
+                                    users.
+                                    Addressing performance bottlenecks and refining gameplay mechanics were integral
+                                    parts
+                                    of the development journey.
+                                </p>
+                                <div class="modal-imgs">
+                                    <img src="img/TowerDefense/EnemySpawnercode.png" />
+                                </div>
+                            </div>
+                            <h2> Conclusion </h2>
+                            <div class="modal-island">
+                                <p class="modal-text">
+
+                                    Developing the Tower Defense game was a valuable learning experience, showcasing my
+                                    ability to navigate complex game development challenges. The project highlighted the
+                                    significance of comprehensive testing, effective debugging, and a deep understanding
+                                    of
+                                    Unity and C# programming principles. It underscored the importance of perseverance
+                                    and
+                                    attention to detail in delivering a high-quality gaming experience for players.
+                                </p>
+                                <div class="modal-imgs">
+                                    <img src="img/TowerDefense/Bulletcode.png" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-inner">
+                <div class="proj-container">
+                    <p class="title">OrbitX</p>
+                    <button id="myBtn1" class="myBtn"><img class="modal-image" src="img/orbitx.png"></button>
+                    <div id="myModal1" class="modal">
+                        <div class="modal-content">
+                            <span id="close" class="close1">&times;</span>
+                            <h1 class="modal-title">OrbitX</h1>
+                            <ul class="box">
+                                <div>
+                                    <h2>BO-Space Project: Adventure Horror Game</h2>
+                                    <div class="modal-island">
+                                        <p class="modal-text">
+
+
+
+                                            The BO-Space project was a collaborative effort assigned to a group of Game
+                                            Developers and Artists, tasked with creating a game within 8 weeks to
+                                            showcase their current skills. As part of Group 9, we embarked on developing
+                                            an Adventure Horror game, with the overarching theme centered around space
+                                            exploration. Our collective aim was to deliver an immersive gaming
+                                            experience that would resonate with players and push the boundaries of our
+                                            capabilities.
+
+                                        </p>
+                                        <div class="modal-imgs">
+                                            <img src="img/orbitx.png" />
+                                        </div>
+                                    </div>
+                                    <h2>Development</h2>
+                                    <div class="modal-island">
+                                        <p class="modal-text">
+
+                                            During the development phase, my primary focus revolved around crafting the
+                                            game's AI and defining its behavior to create an intense and gripping
+                                            gameplay experience. Leveraging my expertise in AI programming, I dedicated
+                                            myself to designing and implementing complex AI systems that were integral
+                                            to the game's suspenseful and immersive atmosphere. I collaborated closely
+                                            with the team to ensure that the AI seamlessly integrated with the game's
+                                            narrative and mechanics, contributing to a cohesive and engaging player
+                                            experience.
+                                        </p>
+                                        <div class="modal-imgs">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/pBwwZd9RuRs?si=XeWOAHSLZca20SJA"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+
+                                    </div>
+                                    <a href="https://github.com/MikeHuijgen/BO_Space" target="_blank">GitHub</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-inner">
+                <div class="proj-container">
+                    <p class="title">Coming soon...</p>
+                    <button id="myBtn4" class="myBtn"><img class="modal-image" src="img/placeholder-image.png"></button>
+                    <div id="myModal4" class="modal">
+                        <div class="modal-content">
+                            <span class="close4" id="close">&times;</span>
+                            <h1 class="modal-title">Coming Soon...</h1>
+                            <h5 class="modal-subtitle">-Coming Soon...</h5>
+                            <br></br>
+                            <p class="modal-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-inner">
+                <div class="proj-container">
+                    <p class="title">Coming Soon...</p>
+                    <button id="myBtn5" class="myBtn"><img class="modal-image" src="img/placeholder-image.png"></button>
+                    <div id="myModal5" class="modal">
+                        <div class="modal-content">
+                            <span class="close5" id="close">&times;</span>
+                            <h1 class="modal-title">Coming Soon...</h1>
+                            <h5 class="modal-subtitle">Coming Soon...</h5>
+                            <br></br>
+                            <p class="modal-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middlesection">
+
+    </div>
+
+    <div id="bottomsection">
+        <h1>About me</h1>
+        <div class="aboutMe">
+            <p>
+                I'm an 18-year-old aspiring Unity/Unreal developer from Edam Volendam, Netherlands, living by the
+                motto, "Aspire before you expire."
+                My journey into the world of technology and software development
+                began with a deep love for games and their profound impact on people's lives. Witnessing how games
+                can
+                spark joy, create connections, and even inspire, I was driven to explore the art of programming to
+                create experiences that could touch people on a deeper level. Now, I'm seeking an internship in an
+                environment that values effective workflow, hoping to further hone my skills and contribute to the world
+                of game development with my creative ideas. 
+            </p>
+            <img src="img/juslikemefr.png" />
+
+        </div>
+
+
+        <footer class="footer" id="contact">
+            <h1 id="contact-info">Contact</h1>
+            <h3 id="contacth3">
+                <a href="siegersmajason@gmail.com">Mail me</a>
+                <br>
+                <a href="https://github.com/j5x">My GitHub</a>
+                <br>
+                <a href="https://linktr.ee/jsnx2k">Linktree</a>
+
+            </h3>
+            
+        </footer>
+    </div>
+</body>
+
+</html>

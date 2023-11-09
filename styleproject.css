@@ -1,56 +1,56 @@
 * {
-    color: white;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background-image: url(img/greybackground.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-  }
+  color: white;
+}
 
-  #projectlauncher{
-    background-image: url(img/griffithbackground.jpg);
-  }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-image: url(img/greybackground.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  #ngs{
-    background-image: url('img/neongamestudiologo.jpg');
-  }
+}
 
-  #sitetemp{
-    background-image: url(img/htmlcssjsbackground.jpg);
-  }
-  
+#projectlauncher {
+  background-image: url(img/griffithbackground.jpg);
+}
 
-  #space{
-    background-image: url(img/OrbitX/spaceimg.jpg);
-  }
-  
-  
-  /* Adjusted styles to make the navbar sticky */
-  nav {
-    display: block;
-    left: 0;
-    top: 0;
-    text-transform: uppercase;
-    position: sticky;
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: rgb(46, 46, 46);
-    height: 4vw;
-    margin-bottom: 2%;
+#ngs {
+  background-image: url('img/neongamestudiologo.jpg');
+}
+
+#sitetemp {
+  background-image: url(img/htmlcssjsbackground.jpg);
+}
+
+
+#space {
+  background-image: url(img/OrbitX/spaceimg.jpg);
+}
+
+
+/* Adjusted styles to make the navbar sticky */
+nav {
+  display: block;
+  left: 0;
+  top: 0;
+  text-transform: uppercase;
+  position: sticky;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(46, 46, 46);
+  height: 4vw;
+  margin-bottom: 2%;
 }
 
 .name {
-    font-size: 80%;
-    padding: 1vw;
+  font-size: 80%;
+  padding: 1vw;
 }
 
 .name a {
@@ -58,118 +58,130 @@
 }
 
 .menu {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
 .nav-items {
-    display: inline-block;
-    background-color: #181818;
-    border: none;
-    color: white;
-    text-align: center;
-    font-size: 16px;
-    padding: 10px 20px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s;
+  display: inline-block;
+  background-color: #181818;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.menu a {
+  margin-right: 1vw;
 }
 
 .nav-items:hover {
-    background-color: #4e4e4eb7;
+  background-color: #4e4e4eb7;
 }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    
-  }
-  
-  .project-header {
-    text-align: center; /* Align text to the center */ 
-    background-color: #141414bc;
-    width: 70%;
-    font-size: 20px;
-    border-bottom: solid 2px white;
-  }
-  
-  .project-title{
-    padding: 0;
-    margin-bottom:0;
-  }
-  
-  .my-features > h2{
-    font: 16px;
-  }
-  
-  .project-details {
-    /* Adjusted width as specified */
-    background-color: #141414bc;
-    height: 50vw;
-    width: 70%;
-    overflow: auto; /* Added overflow property to enable scrolling for overflowing content */
-  }
-  
-  .project-text {
-    text-align: center;
-    padding-top: 1vw;
-    margin-left: 5.5vw;
-    margin-right: 5vw;;
-  }
-  .project-stats{
-    display: flex;
-    flex-direction: row;
-    padding-left: 4vw;
-    justify-content:  space-evenly;
-  }
-  
-  .project-description{
-    padding: 2vw;
-  }
-  
-  .project-description > .h2{
-    font-size: 36px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .project-description > .p{
-    font-size: 14px;
-  }
-  
-  .project-description > .subtitle{
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .project-images{
-    text-align: center;
-    font-size: 14px;
-    padding-top: 2vw;
-  
-  }
-  .project-images > img{
-    width: 75%;
-  }
- 
 
-  #contact {
-    background-color: #2c2b2b;
-    text-align: center;
-    padding: 2%;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+}
+
+.project-header {
+  text-align: center;
+  /* Align text to the center */
+  background-color: #141414bc;
+  width: 70%;
+  font-size: 20px;
+  border-bottom: solid 2px white;
+}
+
+.project-title {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.my-features>h2 {
+  font: 16px;
+}
+
+.project-details {
+  /* Adjusted width as specified */
+  background-color: #141414bc;
+  height: 50vw;
+  width: 70%;
+  overflow: auto;
+  /* Added overflow property to enable scrolling for overflowing content */
+}
+
+.project-text {
+  text-align: center;
+  padding-top: 1vw;
+  margin-left: 5.5vw;
+  margin-right: 5vw;
+}
+
+
+
+.project-stats {
+  display: flex;
+  flex-direction: row;
+  padding-left: 4vw;
+  justify-content: space-evenly;
+}
+
+.project-description {
+  padding: 2vw;
+}
+
+
+
+.project-description>.h2 {
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.project-description>.p {
+  font-size: 14px;
+}
+
+.project-description>.subtitle {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.project-images {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 2vw;
+
+}
+
+.project-images>img {
+  width: 75%;
+}
+
+
+#contact {
+  background-color: #2c2b2b;
+  text-align: center;
+  padding: 2%;
 }
 
 #contact>p {
-    background-color: #2c2b2b;
+  background-color: #2c2b2b;
 }
 
 footer {
-    background-color: #333333;
-    text-align: center;
-    padding: 2%;
-    display: block;
+  background-color: #333333;
+  text-align: center;
+  padding: 2%;
+  display: block;
 }
