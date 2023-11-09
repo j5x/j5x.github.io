@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleproject.css">
+    <title>Project Starfall</title>
+</head>
+
+<body id="ngs">
+    <header class="navbar">
+        <nav>
+            <div class="name">
+                <a href="index.html">
+                    <h1>Jason Siegersma</h1>
+                    <h2>Game Developer</h2>
+                </a>
+            </div>
+            <div class="menu">
+                <button class="nav-items" onclick="window.location.href='index2.html'">Home</button>
+                <button class="nav-items" onclick="window.location.href='#services'">Projects</button>
+                <button class="nav-items" onclick="window.location.href='#contact'">Contact</button>
+                <button class="nav-items" onclick="window.location.href='#about'">About Me</button>
+                <a class="nav-items" href="img/CV.png" target="_blank">CV</a>
+            </div>
+
+        </nav>
+    </header>
+    <div class="container">
+        <div class="project-header">
+            <h1>Project Starfall</h1>
+        </div>
+
+        <div class="project-details">
+            <div class="project-stats">
+                <p class="project-text">
+                    Project Status: <br>
+                    Project Type: <br>
+                    Project Duration: <br>
+                    Software Used: <br>
+                    Languages Used: <br>
+                    Primary Role(s): <br>
+                    Team: <br>
+                </p>
+                <p class="project-text">
+                    Completed <br>
+                    Hybrid Learning Environment <br>
+                    4 Weeks <br>
+                    Unity <br>
+                    C# <br>
+                    Game Developer <br>
+                    2 Devs, 1 Artist
+                </p>
+            </div>
+            <div class="project-description">
+                <h2>About Project Starfall</h2>
+                <p>
+                    Our Unannounced Game as a Service is a 2D Metroidvania experience for local co-op play, inspired by
+                    beloved 1980s cartoons.
+                    It operates as a constantly evolving game, offering an expanding open world, engaging storylines,
+                    and character customization.
+                    Join up to 4 players as you embark on cooperative adventures and exciting missions, uncovering the
+                    mysteries of the game's world while customizing your characters with 1980s nostalgia.
+                    <p>
+                        
+                        <a href="https://www.neonorigins.com/" target="_blank">Neon Site</a>
+                <h2 class="subtitle">My Features</h2>
+                <ul>
+                    <li>Octodrone</li>
+                    <li>Radial Stamina</li>
+                    <li>Post-processing</li>
+                </ul>
+
+                <h2 class="subtitle">Technologies Used</h2>
+                <ul>
+                    <li>Statemachine</li>
+                    <li>Shadergraph</li>
+                    <li>Animator</li>
+                </ul>
+
+                <!--Begin Intro Section-->
+                <h2 class="project-text">Intro</h2>
+                <p class="project-text">This summary offers a glimpse into the obstacles I faced while building this
+                    intricate system, with a special focus on animation frames. My goal was to make the combat system
+                    feel like real swordfights. Animation frames were at the core of this vision. They acted as the
+                    timing for parry and block actions, like the beats in a song, making the combat feel authentic.
+                    <br>
+                    <br>
+
+                    In the next sections, we'll explore how I conceived and designed this system, and how animation
+                    frames played a crucial role in bringing it to life. We'll also touch on the challenges I
+                    encountered, as every big project comes with its hurdles. Throughout, remember that the magic of
+                    game development often lies in the balance between vision and execution, with animation frames being
+                    a key part of that equation.
+                </p>
+
+                <div class="project-images">
+                    <p class="image-title">Gif of the mechanics</p>
+                    <img src="img/AdvancedMeleeSystem/parryblock.gif" alt="Image 1">
+                    <p class="project-text">
+                        In the gif above you can see how the mechanic works.
+                    </p>
+                </div>
+                <!--End Intro Section-->
+
+                <!--Begin Development Section-->
+
+                <h2 class="project-text">Development</h2>
+                <p class="project-text">
+                    Parrying and blocking stood at the core of the system, each posing its unique coding challenges. It
+                    wasn't just about making them work; it was about coding them to align seamlessly with specific
+                    animation frames. Players had to grapple with these techniques. To make the combat system more
+                    engaging, I employed SphereCast within the code. This technique introduced a radius to parry and
+                    block actions, making the combat interactions dynamic and responsive.
+
+                </p>
+
+                <div class="project-images">
+                    <p class="image-title">A function from the script.</p>
+                    <img src="img/AdvancedMeleeSystem/parryblockcode.png" alt="Image 1">
+                    <p class="project-text">
+                        In the snippet above you can see the SphereCast being used when you press the parry button.
+                    </p>
+                </div>
+
+                <div class="project-images">
+                    <p class="image-title">How the SphereCast looks in the editor</p>
+                    <img src="img/AdvancedMeleeSystem/ablockingandparryingradius.png" alt="Image 1">
+                    <p class="project-text">
+                        As you can see the radius of the SphereCast is around the player, so when the enemy does an
+                        attack in that range you are able to block/parry it<br>
+                    </p>
+                </div>
+
+                <h2 class="project-text">Animator</h2>
+                <p class="project-text">
+                    The job of the animator was to bring the combat system to life, ensuring that every action, from
+                    parrying to striking, seamlessly blended with the gameplay. They were the architects of realism,
+                    making the combat experience both engaging and immersive.
+                </p>
+                <div class="project-images">
+                    <p class="image-title">How the animator looks</p>
+                    <img src="img/AdvancedMeleeSystem/AnimatorYbot.png" alt="Image 1">
+                    <p class="project-text">
+
+                    </p>
+                </div>
+                <h3 class="project-text">Collision and Animation frames</h3>
+                <p class="project-text">
+                    The posture damage system added a layer of complexity that was deeply tied to the world of animation
+                    frames. For posture damage to make sense, parrying and strikes had to be executed within specific
+                    frames. This was a coding challenge that required precision.
+                </p>
+                <p class="project-text">
+                    Advanced collision detection was an integral part of the combat system. It allowed players to
+                    experience precise interactions between their sword and an enemy's weapon. However, it operated
+                    within the intricate framework of animation frames, making the coding journey all the more
+                    challenging.
+                </p>
+                <div class="project-images">
+                    <p class="image-title">The animation events setup</p>
+                    <img src="img/AdvancedMeleeSystem/animationframes.png" alt="Image 1">
+                    <p class="project-text">
+
+                    </p>
+                    <h3 class="project-text">Conclusion</h3>
+                    <p class="project-text">
+                        In crafting the Advanced Melee Weapon Combat System, I uncovered the delicate balance between
+                        art and science within game development. It beckons players to master precise timing while
+                        challenging developers to unravel creative and coding complexities. Animation frames emerged as
+                        the pivotal enablers, shaping an immersive combat experience.
+
+                    </p>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <h1>Contact</h1>
+        <h3>
+            <a href="siegersmajason@gmail.com">Mail me</a>
+            <br>
+            <a href="https://github.com/j5x">My GitHub</a>
+            <br>
+            <a href="https://linktr.ee/jsnx2k">Linktree</a>
+
+        </h3>
+
+    </footer>
+
+</body>
+
+</html>

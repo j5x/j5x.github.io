@@ -3,47 +3,161 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jason Siegersma</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="styleproject.css">
+    <title>Project Starfall</title>
 </head>
 
-<body>
-    <nav>
-        <h1 class="name">
-            Jason Siegersma
-        </h1>
-        <div class="menu">
-            <a class="nav-items" href="index.html">Projects</a>
-            <a class="nav-items" href="contact.html">Contact</a>
-            <a class="nav-items" href="Aboutme.html">About Me</a>
-            
+<body id="space">
+    <header class="navbar">
+        <nav>
+            <div class="name">
+                <a href="index.html">
+                    <h1>Jason Siegersma</h1>
+                    <h2>Game Developer</h2>
+                </a>
+            </div>
+            <div class="menu">
+                <button class="nav-items" onclick="window.location.href='index2.html'">Home</button>
+                <button class="nav-items" onclick="window.location.href='#services'">Projects</button>
+                <button class="nav-items" onclick="window.location.href='#contact'">Contact</button>
+                <button class="nav-items" onclick="window.location.href='#about'">About Me</button>
+                <a class="nav-items" href="img/CV.png" target="_blank">CV</a>
+            </div>
+
+        </nav>
+    </header>
+    <div class="container">
+        <div class="project-header">
+            <h1>OrbitX</h1>
         </div>
 
-    </nav>
-    </article>
-    <div class="project1">
+        <div class="project-details">
+            <div class="project-stats">
+                <p class="project-text">
+                    Project Status: <br>
+                    Project Type: <br>
+                    Project Duration: <br>
+                    Software Used: <br>
+                    Languages Used: <br>
+                    Primary Role(s): <br>
+                    Team: <br>
+                </p>
+                <p class="project-text">
+                    Completed <br>
+                    College Project <br>
+                    10 Weeks <br>
+                    Unity <br>
+                    C# <br>
+                    Game Developer <br>
+                    2 Devs, 4 Artist
+                </p>
+            </div>
 
-        <h1 class="projectHeader">
-            BO-SPACE
-        </h1>
-        <div class="projectWrapper">
-            <p>
-                BO-Space was a group assignment given to Game Developers and Artists to develop a game in 8 weeks and
-                see
-                what they could make with their current skills.
-                <br>
-                I was in group 9. We worked on a Adventure Horror in game and as theme we had space.
-                My part in this game was working on the AI and its behavior.
-                <br>
-                This is our <a href="https://github.com/MikeHuijgen/BO_Space"target ="_blank">GitHub</a>
-            </p>
-            <img src="img/orbitx.png">
+            <div class="project-description">
+                <h2>About OrbitX</h2>
+                <p>
+                    The BO-Space project was a collaborative effort assigned to a group of Game Developers and Artists,
+                    tasked with creating a game within 8 weeks to showcase their current skills.
+                <p>
+                    <a href="https://github.com/MikeHuijgen/BO_Space" target="_blank">GitHub</a>
+                <h2 class="subtitle">My Features</h2>
+                <ul>
+                    <li>The AI Behavior</li>
+                    <li>The Light Event</li>
+                    <li>Player Movement</li>
+                </ul>
+
+                <h2 class="subtitle">Technologies Used</h2>
+                <ul>
+                    <li>Statemachine</li>
+                    <li>NavMesh</li>
+                    <li>Animator</li>
+                </ul>
+
+                <!--Begin Intro Section-->
+                <h2 class="project-text">Intro</h2>
+                <p class="project-text">As part of Group 9, we
+                    embarked on developing an Adventure Horror game, with the overarching theme centered around space
+                    exploration. Our collective aim was to deliver an immersive gaming experience that would resonate
+                    with players and push the boundaries of our capabilities.
+
+
+                </p>
+
+                <div class="project-images">
+                    <p class="image-title">Gameplay Video of the game</p>
+                    <iframe width="1000" height="600"
+                        src="https://www.youtube.com/embed/pBwwZd9RuRs?si=XeWOAHSLZca20SJA" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <p class="project-text">
+                        Video is the complete walkthrough of level 1, maybe in the future we will work on it again
+                    </p>
+                </div>
+                <!--End Intro Section-->
+
+                <!--Begin Development Section-->
+
+                <h2 class="project-text">Development</h2>
+                <p class="project-text">
+                    During the development phase, my primary focus revolved around crafting the game's AI and defining
+                    its behavior to create an intense and gripping gameplay experience. Leveraging my expertise in AI
+                    programming, I dedicated myself to designing and implementing complex AI systems that were integral
+                    to the game's suspenseful and immersive atmosphere. I collaborated closely with the team to ensure
+                    that the AI seamlessly integrated with the game's narrative and mechanics, contributing to a
+                    cohesive and engaging player experience.
+                </p>
+                <div class="project-images">
+                    <p class="image-title">Code that allows the AI to follow the player.</p>
+                    <img src="img/OrbitX/FollowPlayerCode.png" alt="Image 1">
+                    <p class="project-text">
+                        Simple code structure and easy to use.
+                    </p>
+                </div>
+                <div class="project-images">
+                    <p class="image-title">Code waypoint system </p>
+                    <img src="img/OrbitX/GoToNextPointCode.png" alt="Image 1">
+                    <p class="project-text">
+                        This code shows you when and which waypoint is selected.
+                    </p>
+                </div><div class="project-images">
+                    <p class="image-title">The Light Event Code</p>
+                    <img src="img/OrbitX/LightEvenCode.png" alt="Image 1">
+                    <p class="project-text">
+                        This is the light event, which happens when you turn on both terminals, then the monster will go to the light.
+                    </p>
+                </div>
+                <h3 class="project-text">Conclusion</h3>
+                <p class="project-text">
+                    In summary, the project's success stemmed from strong teamwork, yet the lack of documentation and
+                    time constraints posed significant challenges. Moving forward, prioritizing documentation and
+                    allowing ample time for planning will be crucial for achieving optimal results.
+                </p>
+
+
+
+
+
+
+            </div>
         </div>
-
     </div>
-</body>
 
+    <footer id="contact">
+        <h1>Contact</h1>
+        <h3>
+            <a href="siegersmajason@gmail.com">Mail me</a>
+            <br>
+            <a href="https://github.com/j5x">My GitHub</a>
+            <br>
+            <a href="https://linktr.ee/jsnx2k">Linktree</a>
+
+        </h3>
+
+    </footer>
+
+</body>
 
 </html>

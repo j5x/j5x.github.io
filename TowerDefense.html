@@ -3,43 +3,167 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jason Siegersma</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="styleproject.css">
+    <title>Project Starfall</title>
 </head>
 
 <body>
-    <nav>
-        <h1 class="name">
-            Jason Siegersma
-        </h1>
-        <div class="menu">
-            <a class="nav-items" href="index.html">Projects</a>
-            <a class="nav-items" href="contact.html">Contact</a>
-            <a class="nav-items" href="Aboutme.html">About Me</a>
-            
+    <header class="navbar">
+        <nav>
+            <div class="name">
+                <a href="index.html">
+                    <h1>Jason Siegersma</h1>
+                    <h2>Game Developer</h2>
+                </a>
+            </div>
+            <div class="menu">
+                <button class="nav-items" onclick="window.location.href='index2.html'">Home</button>
+                <button class="nav-items" onclick="window.location.href='#services'">Projects</button>
+                <button class="nav-items" onclick="window.location.href='#contact'">Contact</button>
+                <button class="nav-items" onclick="window.location.href='#about'">About Me</button>
+                <a class="nav-items" href="img/CV.png" target="_blank">CV</a>
+            </div>
+
+        </nav>
+    </header>
+    <div class="container">
+        <div class="project-header">
+            <h1>Tower Defense</h1>
         </div>
 
-    </nav>
-    <div class="project1">
+        <div class="project-details">
+            <div class="project-stats">
+                <p class="project-text">
+                    Project Status: <br>
+                    Project Type: <br>
+                    Project Duration: <br>
+                    Software Used: <br>
+                    Languages Used: <br>
+                    Primary Role(s): <br>
+                    Team: <br>
+                </p>
+                <p class="project-text">
+                    Completed <br>
+                    College Project <br>
+                    8 Weeks <br>
+                    Unity <br>
+                    C# <br>
+                    Game Developer <br>
+                    1 Developer
+                </p>
+            </div>
 
-        <h1 class="projectHeader">
-            Tower Defense
-        </h1>
-        <div class="projectWrapper">
-            <p>
-                Tower Defense is a game i made in the first period of my second year at Mediacollege Amsterdam.
-                <br>
-                The game was 10 weeks in Development, I learned how the unity instantiate system worked and how component linking worked.
-                <br>
-                here is my <a href="https://github.com/j5x/BO-TD">github</a> repository, there you can see all the struggles i went through in the making of this project.
-                <br>
-                The project was a stepping stone to my improvement my development skills and I learned alot from it.
-                
-            </p>
-            <img src="img/towerdefense.PNG">
+            <div class="project-description">
+                <h2>About Tower Defense</h2>
+                <p>
+                    My First Tower Defense Game represents my initial steps into the world of game development,
+                    reflecting my passion for creating interactive experiences. Despite its simplicity, the project
+                    embodies my dedication to learning and my enthusiasm for crafting engaging gameplay. As I continue
+                    to evolve as a developer, I am eager to embark on new challenges and create even more captivating
+                    and innovative games in the future.
+                <p>
+                    <a href="https://github.com/j5x/BO-TD" target="_blank">GitHub</a>
+                <h2 class="subtitle">My Features</h2>
+                <ul>
+                    <li>Enemy Waypoints</li>
+                    <li>Turrets</li>
+                    <li>EnemySpawner</li>
+                    <li>Shop</li>
+                    <li>Nodes</li>
+                    <li>UI</li>
+                </ul>
+                <!--Begin Intro Section-->
+                <h2 class="project-text">Intro</h2>
+                <p class="project-text">This project was my first period of year 2 when I started Game Development.
+                </p>
+
+                <!--End Intro Section-->
+
+                <!--Begin Development Section-->
+
+                <h2 class="project-text">Development</h2>
+                <p class="project-text">
+
+
+                    Throughout the development phase, ensuring seamless integration of diverse game components such as
+                    tower mechanics, enemy behavior, and wave spawning required meticulous debugging and persistent
+                    testing. Handling complex AI behaviors and optimizing game performance were essential aspects that I
+                    focused on during the development process. The iterative approach adopted during the game's
+                    construction allowed for thorough testing and debugging, resulting in a robust and engaging gameplay
+                    experience for users. Addressing performance bottlenecks and refining gameplay mechanics were
+                    integral parts of the development journey.
+
+                </p>
+
+                <div class="project-images">
+                    <p class="image-title">Picture of EnemySpawner code</p>
+                    <img src="img/TowerDefense/EnemySpawnercode.png" alt="Image 1">
+                    <p class="project-text">
+                        In the code you can see the way the enemie prefabs are spawned and the rates which you can
+                        customize in the in specter
+                    </p>
+                </div>
+
+                <div class="project-images">
+                    <p class="image-title">Picture of the Bullet Code</p>
+                    <img src="img/TowerDefense/Bulletcode.png" alt="Image 1">
+                    <p class="project-text">
+                        In this code you can see that the bullet tracks the enemy closest to him and then deals damage.
+                    </p>
+                </div>
+                <div class="project-images">
+                    <p class="image-title">Picture of the turret target code</p>
+                    <img src="img/TowerDefense/UpdateTargetcode.png" alt="Image 1">
+                    <p class="project-text">
+                        In this code you can see that the turret tracks the closest enemy to him.
+                    </p>
+                </div>
+                <div class="project-images">
+                    <p class="image-title">Picture of the turret shoot code</p>
+                    <img src="img/TowerDefense/TurretShootcode.png" alt="Image 1">
+                    <p class="project-text">
+                        In this code you can see that the bullet is instantiated from the barrel of the turret and
+                        shoots it at the enemy.
+                    </p>
+                </div>
+                <div class="project-images">
+                    <p class="image-title">Picture of the gameplay</p>
+                    <img src="img/towerdefense.PNG" alt="Image 1">
+                    <p class="project-text">
+                        In this screenshot you can see the gameplay.
+                    </p>
+                </div>
+                <h3 class="project-text">Conclusion</h3>
+                <p class="project-text">
+                    Developing the Tower Defense game was a valuable learning experience, showcasing my ability to
+                    navigate complex game development challenges. The project highlighted the significance of
+                    comprehensive testing, effective debugging, and a deep understanding of Unity and C# programming
+                    principles.
+                </p>
+
+        
+
+
+
+
+            </div>
         </div>
-
     </div>
+
+    <footer id="contact">
+        <h1>Contact</h1>
+        <h3>
+            <a href="siegersmajason@gmail.com">Mail me</a>
+            <br>
+            <a href="https://github.com/j5x">My GitHub</a>
+            <br>
+            <a href="https://linktr.ee/jsnx2k">Linktree</a>
+
+        </h3>
+
+    </footer>
+
 </body>
+
+</html>
