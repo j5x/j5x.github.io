@@ -260,3 +260,6 @@ nav {
  
    
 }
+@media (max-width: 768px) {
+    /* CSS rules for mobile devices go here */
+   }

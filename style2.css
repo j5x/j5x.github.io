@@ -253,3 +253,18 @@ footer {
     padding: 2%;
     display: block;
 }
+
+
+    
+@media (max-width: 1200){
+    .about-me{
+        flex-direction: column;
+    }
+} 
+    
+
+@media (max-width: 768px) {
+    .about-me{
+        flex-direction: column;
+    }
+   }
