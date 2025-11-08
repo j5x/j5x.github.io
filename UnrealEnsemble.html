@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleproject.css">
+    <title>Unreal Ensemble</title>
+</head>
+
+<body id="ensemble">
+<!-- Navigation -->
+<header class="navbar">
+    <nav>
+        <div class="name">
+            <a href="index.html">
+                <h1>Jason Siegersma</h1>
+            </a>
+        </div>
+        <div class="menu">
+            <button class="nav-items" onclick="window.location.href='index.html'">Home</button>
+            <button class="nav-items" onclick="window.location.href='index.html#projects'">Projects</button>
+            <button class="nav-items" onclick="window.location.href='#contact'">Contact</button>
+            <a class="nav-items" href="img/CV.png" target="_blank">CV</a>
+        </div>
+        <div class="hamburger">☰</div>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+    <!-- Project Header -->
+    <div class="project-header">
+        <h1>Unreal Ensemble</h1>
+    </div>
+
+    <!-- Project Details -->
+    <div class="project-details">
+        <div class="project-stats">
+            <p class="project-text">
+                <strong>Project Status: </strong>Ongoing <br>
+                <strong>Project Type: </strong>Studio Collaboration <br>
+                <strong>Software Used: </strong>Unreal Engine, Visual Studio, Perforce <br>
+                <strong>Languages Used: </strong>Blueprints, C++ <br>
+                <strong>Team: </strong>3 Developers <br>
+            </p>
+        </div>
+
+        <div class="project-description">
+            <!-- About -->
+            <h2>About this Project</h2>
+            <p>
+                <b>Unreal Ensemble</b> is a collaborative Unreal Engine project with <strong>Veldboom Studios</strong>
+                and <strong>Escher Verse</strong>. It blends architectural visualization, interactive environments, and gameplay mechanics.
+                The project emphasizes performance-optimized environments, polished visuals, and functional systems.
+            </p>
+
+            <div>
+                <img src="img/Ensemble/Ensemble01.jpg" alt="Project Overview">
+            </div>
+
+            <h2 class="subtitle">Challenges</h2>
+            <ul>
+                <li>Blending ArchViz and interactive systems</li>
+                <li>Character animation and AI behavior</li>
+                <li>Cross-team collaboration and remote workflow</li>
+                <li>Optimizing performance for large environments</li>
+            </ul>
+
+            <h2 class="subtitle">Key Contributions</h2>
+            <ul>
+                <li>Environment construction and optimization (Nanite & Lumen)</li>
+                <li>Lighting & material refinement for consistent visuals</li>
+                <li>Component Filter system for in-editor workflow improvements</li>
+                <li>Character motion system (walk, run, jump, crouch, climb, sit, prone)</li>
+                <li>AI system development for dynamic character interaction</li>
+                <li>Animation retargeting for 3D Models</li>
+                <li>Interactive mechanics: doors, furniture, color-changing objects</li>
+                <li>Debugging, QA, and cross-version Unreal maintenance</li>
+            </ul>
+
+            <!-- Intro Section -->
+            <h2 class="project-text">Intro</h2>
+            <p class="project-text">
+                Unreal Ensemble combines my work in <b>ArchViz, animation, and gameplay systems</b>.
+                I contributed to both the visual fidelity of environments and the technical backbone of interactive features.
+                The project was my largest Unreal collaboration to date.
+            </p>
+
+            <!-- Development Section -->
+            <h2 class="project-text">Development</h2>
+
+            <h3 class="project-text">Phase 1 – Prototyping (2023)</h3>
+            <p class="project-text">
+                Initial environment setup, lighting passes, and UI prototyping. Started character motion system
+                supporting walk, run, jump, and crouch. Tested climbing, sitting, and prone interactions.
+            </p>
+            <div class="project-images">
+                <img src="img/Ensemble/environment.png" alt="Motion State Machine Prototype">
+            </div>
+
+            <h3 class="project-text">Phase 2 – Consolidation (2024)</h3>
+            <p class="project-text">
+                Expanded AI systems for multiple characters, retargeted animations to MetaHumans and Grio characters.
+                Integrated Variant Manager for asset & UI synchronization.
+                Optimized environments for runtime performance while refining lighting and materials.
+            </p>
+            <div class="project-images">
+                <p>AI & Animation Setup</p>
+                <img src="img/Ensemble/characteranim.png" alt="AI and Animation">
+            </div>
+
+            <h3 class="project-text">Phase 3 – Mechanics & Tools (Late 2024 – 2025)</h3>
+            <p class="project-text">
+                Built interactive systems (doors, furniture, color-changeable objects), managed Git repository,
+                developed game launcher, and implemented Niagara effects for polish.
+            </p>
+            <div class="project-images">
+                <p>Interactive Mechanics & Launcher</p>
+                <img src="img/Ensemble/interactivematerialsheet.png" alt="Mechanics and Launcher">
+            </div>
+
+            <!-- Conclusion -->
+            <h2 class="project-text">Conclusion</h2>
+            <p class="project-text">
+                Unreal Ensemble strengthened my skills in <b>environment optimization, animation, AI, and interactive system design</b>.
+                It provided experience with collaborative workflows, technical problem solving, and integrating creative and technical features.
+            </p>
+
+            <!-- Visuals & Media Section -->
+            <h2 class="project-text">Visuals & Media</h2>
+            <div class="project-images">
+                <p>Animation+ Simple Interactions</p>
+                <video controls width="100%" preload="metadata">
+                    <source src="img/Ensemble/Ensemblestatemachinehb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="project-images">
+                <p>Environment Design</p>
+                <img src="img/Ensemble/archviz_ensemble.png" alt="Nature Environment">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer id="contact">
+    <p>Contact: <a href="mailto:jasonsiegersmakvk@gmail.com">Mail me</a></p>
+    <p>
+        <a href="https://github.com/j5x" target="_blank">GitHub</a> |
+        <a href="https://linktr.ee/kwasiaep" target="_blank">Linktree</a>
+    </p>
+</footer>
+
+<!-- Scripts -->
+<script src="hamburger.js"></script>
+</body>
+
+</html>

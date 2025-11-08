@@ -165,7 +165,7 @@ section {
 }
 
 .tabcontent {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     border-top: none;
     overflow: hidden;
@@ -257,7 +257,7 @@ footer {
 
 
     
-@media (max-width: 1200){
+@media (max-width: 1200px){
     .about-me{
         flex-direction: column;
     }
@@ -269,3 +269,16 @@ footer {
         flex-direction: column;
     }
    }
+
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .introHeader h1 {
+        font-size: 20px;
+    }
+}
