@@ -1,0 +1,170 @@
+:root {
+    --bg: #0a0a0a;
+    --text: #fff;
+    --muted: #aaa;
+    --accent: #2563eb;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.project-header {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1e293b 40%, #2563eb 100%);
+    color: white;
+    padding: 4rem 10%;
+    position: relative;
+}
+
+.back-link {
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.category {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+}
+
+.project-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.project-content {
+    padding: 3rem 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* Overview section */
+.overview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.overview-text {
+    flex: 2;
+}
+
+.project-details {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.5rem;
+    min-width: 250px;
+}
+
+.detail h3 {
+    margin-bottom: 0.3rem;
+    color: var(--accent);
+    font-size: 1rem;
+}
+
+.detail p {
+    margin-top: 0;
+    color: var(--text);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.tags span {
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--accent);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.gallery img,
+.full-image {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.video-section video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.caption {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-top: 0.3rem;
+}
+
+/* Next Project */
+.next-project {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+}
+
+.next-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.next-card img {
+    width: 120px;
+    border-radius: 8px;
+}
+
+.next-info h4 {
+    margin: 0;
+}
+
+.next-info a {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .overview {
+        flex-direction: column;
+    }
+
+    .project-header {
+        padding: 3rem 5%;
+    }
+
+    .project-content {
+        padding: 2rem 5%;
+    }
+
+    .next-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

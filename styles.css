@@ -153,6 +153,22 @@ section {
     margin-top: 0;
     margin-bottom: 10px;
 }
+.card-link {
+    text-decoration: none; /* removes underline */
+    color: inherit;        /* inherit text color */
+    display: block;        /* ensures it fills like a block element */
+    outline: none;         /* removes focus outline */
+}
+
+.card-link:focus,
+.card-link:active {
+    outline: none;         /* remove outline when clicking/tabbing */
+}
+
+.card-link:hover .card {
+    transform: translateY(-5px); /* optional: same hover effect as your card */
+}
+
 
 .tags-mini {
     display: flex;
@@ -191,36 +207,127 @@ section {
 }
 
 
-.contact form {
-    display: grid;
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.contact-section p {
+    color: #aaa;
+    margin-bottom: 2rem;
+}
+
+/* Contact Layout */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
     gap: 15px;
-    max-width: 600px;
-    margin: auto;
+    flex: 2 4 300px; /* wider main focus */
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2.5rem;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.1);
 }
 
 input,
 textarea {
     width: 100%;
-    padding: 10px;
+    padding: 16px 14px; /* increased inner spacing */
     border: 1px solid var(--accent);
-    border-radius: 5px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.07);
+    color: var(--text);
+    font-size: 1rem; /* slightly larger text */
+    resize: vertical;
+    transition: border 0.2s ease, background 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1e7ed7; /* accent highlight */
+    background: rgba(255, 255, 255, 0.1);
+}
+
+textarea {
+    min-height: 140px; /* make the message box taller */
+}
+
+/* Contact Info Cards */
+.contact-info {
+    flex: 1 1 200px; /* smaller column */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-self: stretch; /* make column match form height */
+}
+
+.info-card {
     background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+}
+
+.info-card .icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+.info-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
     color: var(--text);
 }
 
-button[type="submit"] {
-    background: var(--accent);
-    color: #fff;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
+.info-card p {
+    color: #bbb;
+    font-size: 0.9rem;
 }
 
-button[type="submit"]:hover {
-    background: #1e7ed7;
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form, .contact-info {
+        width: 100%;
+    }
+
+    .info-card {
+        padding: 1.2rem;
+    }
 }
+
+
 .scroll-btn {
     background: var(--accent);
     color: #fff;
