@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Compositing | Portfolio</title>
+    <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<header class="project-header" data-bg="img/Editing/Scene3/jetss.png">
+    <a href="index.html" class="back-link">← Back to Portfolio</a>
+    <div class="category">Compositing</div>
+    <h1> Animation Compositing</h1>
+</header>
+
+<main class="project-content">
+    <section class="overview">
+        <div class="overview-text">
+            <h2>Project Overview</h2>
+            <p>
+                This project demonstrates a realistic composition from <a href="https://www.instagram.com/_aphora_/?hl=en">Aphora</a> their art, I used photoshop for the redraw and After Effects to animate and composit.
+                The focus of this project to learn how to make realistic compositions.
+            </p>
+        </div>
+
+        <aside class="project-details">
+            <div class="detail">
+                <h3>Role</h3>
+                <p>Animator, Compositor</p>
+            </div>
+            <div class="detail">
+                <h3>Duration</h3>
+                <p>1+ week</p>
+            </div>
+            <div class="detail">
+                <h3>Client</h3>
+                <p>Personal Project</p>
+            </div>
+            <div class="detail">
+                <h3>Tools Used</h3>
+                <div class="tags">
+                    <span>Photoshop</span>
+                    <span>After Effects</span>
+                </div>
+            </div>
+        </aside>
+    </section>
+
+    <section>
+        <h2>Concept & Planning</h2>
+        <p>
+            The Project started with me scrolling through forums, then i saw the art piece from <a href="https://www.instagram.com/_aphora_/?hl=en">Aphora</a> and decided i want to animate it.
+            <img src="img/Editing/Scene3/AphoraArt.png" alt="">
+        </p>
+    </section>
+
+    <section>
+        <h2>Animation and Setup</h2>
+        <div class="gallery">
+            <div>
+                <video controls width="100%" preload="metadata">
+                    <source src="img/Editing/Scene3/jetwipvid.mp4" type="video/mp4">
+                    "Your browser does not support the video tag."
+                </video>
+                <p class="caption">Animation and Composit</p>
+            </div>
+            <div>
+                <video controls width="100%" preload="metadata">
+                    <source src="img/Editing/Scene3/psdvid.mp4" type="video/mp4">
+                    "Your browser does not support the video tag."
+                </video>
+                <p class="caption">Photoshop setup</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="video-section">
+        <h2>Photoshop Layering Setup</h2>
+       
+
+    </section>
+
+    <section>
+        <h2>Workflow</h2>
+        <p>
+            I masked out each bodypart and redrew them, then after i pulled it into after effects and used puppet pins to animate the character moving. 
+        </p>
+    </section>
+
+    <section>
+        <video controls width="100%" preload="metadata">
+            <source src="img/Editing/Scene3/compjetrender.mp4" type="video/mp4">
+            "Your browser does not support the video tag."
+        </video>
+        <p class="caption">Final rendered scene with all effects applied</p>
+    </section>
+
+    <section>
+        <h2>Technical Challenges</h2>
+        <p>
+            One of the biggest challenges i had with the project was blending the falling down scene.
+            In the original scene his hands were out of the frame, so I went to a later scene and i masked out his hands, then I had to go frame by frame and make sure his hands were not disconnecting from the original footage .
+            It was also really difficult to make the scenes blend together. Overall i think it turned out great, but i definetly have alot to improve on.
+        </p>
+        <div class="tags">
+            <span>VFX</span>
+            <span>After Effects</span>
+            <span>Photoshop</span>
+        </div>
+    </section>
+
+    <section class="next-project">
+        <h3>Next Project</h3>
+        <div class="next-card">
+            <img src="img/Editing/BlenderCompPrac.png" alt="Next project preview" />
+            <div class="next-info">
+                <h4>Kiznaiver Story </h4>
+                <a href="projectvideo1.html">View Project →</a>
+            </div>
+        </div>
+    </section>
+</main>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const header = document.querySelector(".project-header");
+        const bg = header.getAttribute("data-bg");
+        if (bg) {
+            header.style.setProperty("--header-bg", `url(${bg})`);
+            header.style.backgroundImage = `url(${bg})`;
+            header.style.backgroundSize = "cover";
+            header.style.backgroundPosition = "center";
+        }
+    });
+</script>
+
+</body>
+</html>
