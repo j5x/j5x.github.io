@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Mechanics | Portfolio</title>
+    <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<header class="project-header" data-bg="img/neonsitebackground.jpg">
+    <a href="index.html" class="back-link">← Back to Portfolio</a>
+    <div class="category">Mechanics</div>
+    <h1> Octo Monster</h1>
+</header>
+
+<main class="project-content">
+    <section class="overview">
+        <div class="overview-text">
+            <h2>Project Overview</h2>
+            <p>
+                This project was made for the hybrid learning environment at <a href="https://www.neonorigins.com/games/">Neon Origins</a>
+            </p>
+        </div>
+
+        <aside class="project-details">
+            <div class="detail">
+                <h3>Role</h3>
+                <p>Game Developer</p>
+            </div>
+            <div class="detail">
+                <h3>Duration</h3>
+                <p>8-12 weeks</p>
+            </div>
+            <div class="detail">
+                <h3>Client</h3>
+                <p>Professional Studio</p>
+            </div>
+            <div class="detail">
+                <h3>Tools Used</h3>
+                <div class="tags">
+                    <span>C#</span>
+                    <span>Unity</span>
+                    <span>Jetbrains Rider</span>
+                </div>
+            </div>
+        </aside>
+    </section>
+
+    <section>
+        <h2>Concept & Planning</h2>
+        <p>
+            I worked on this together with my <a href="https://10kjvn.github.io/">Co-Worker Jahvairo Monkau</a>. 
+            We first went through a brainstorming session on what enemy we were going to make.
+            One of our teachers came up to us and told us to use one of his old models, which was the Octo Monster.
+            We then designed the attacks and came up with behavioral patterns for the enemy.
+        </p>
+    </section>
+
+    <section>
+        <h2>System Breakdown</h2>
+        <p>
+           In order for us to start developing, we first had to looking to their <a href="https://www.neonorigins.com/custom-force-system-in-unity/">ForceSystem</a>. Almost all of their movement related systems relied on it.
+            We used pair-programming to lessen the workload on each other and get a smooth collaboration. He was in charge of linking the animations to the AI, while I was in charge of the code and 2 every 1-2 hours we would swap roles.
+            To debug the animations we used input.GetKeyDown to trigger the animations and see if they worked properly.
+            once we were sure the animations were fine we went over to the debugging of the enemyAI.
+        </p>
+        <div class="gallery">
+            <div>
+                <img src="img/Octo/OctoAnim2.gif">
+                <p class="caption">Animations</p>
+            </div>
+            <div>
+                <img src="img/Octo/OctoThumbnail.png">
+                <p class="caption">Model View</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Statemachine Breakdown</h2>
+        <p>
+            Patrol and detection systems already existed in the codebase for flying enemies. 
+            Together with the other dev, I refactored and extended this logic to support Octo as the first ground-based enemy. 
+            Through pair programming, we adapted pathfinding and detection behavior, so it could handle grounded patrol routes reliably.
+            The Animator triggers with the enemy's state machine, making sure Octo’s Idle, Walk, Jump, Attack, and Fuzzy states transitioned smoothly.
+            Unity Events were used to time animation transitions such as JumpUp → JumpTop → JumpAttack.
+        </p>
+        <div class="gallery">
+            <div>
+                <img src="img/Octo/OctoAttack.gif">
+                <p class="caption">Attacking State</p>
+            </div>
+            <div>
+                <img src="img/Octo/JumpSnippet.png">
+                <p class="caption">Jump Attack script</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical Challenges</h2>
+        <p>
+            I personally struggled with learning their forcesystem, it was alot of back and forth on how certain variables were supposed to work, but one of the technical directors <a href="https://www.linkedin.com/in/experiencedesigner/">Berend Weij</a> was really helpful with helping me understand the way it worked.
+            Enemy
+        </p>
+        <div class="gallery">
+            <div>
+                <img src="img/GameLauncher/GoogleDriveAPI.png">
+                <p class="caption">Google Drive API Attempt</p>
+            </div>
+            <div>
+                <img src="img/GameLauncher/GLCode.jpg">
+                <p class="caption">Downloading through Github</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Simple Product Showcase</h2>
+        <img src="img/Octo/octoattacking.gif" alt="">
+        <p class="caption">Octo Attacking Gif</p>
+    </section>
+
+    <section>
+        <div class="tags">
+            <span>C#</span>
+            <span>Unity</span>
+            <span>Developer</span>
+        </div>
+    </section>
+
+    <section class="next-project">
+        <h3>Next Project</h3>
+        <div class="next-card">
+            <img src="img/AdvancedMeleeSystem/parryblock.gif" alt="Next project preview" />
+            <div class="next-info">
+                <h4>Parry Mechanic</h4>
+                <a href="projectgame1.html">View Project →</a>
+            </div>
+        </div>
+    </section>
+</main>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const header = document.querySelector(".project-header");
+        const bg = header.getAttribute("data-bg");
+        if (bg) {
+            header.style.setProperty("--header-bg", `url(${bg})`);
+            header.style.backgroundImage = `url(${bg})`;
+            header.style.backgroundSize = "cover";
+            header.style.backgroundPosition = "center";
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Mechanics | Portfolio</title>
+    <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+<header class="project-header" data-bg="img/projectlauncher2.JPG">
+    <a href="index.html" class="back-link">← Back to Portfolio</a>
+    <div class="category">Mechanics</div>
+    <h1> Project Launcher</h1>
+</header>
+
+<main class="project-content">
+    <section class="overview">
+        <div class="overview-text">
+            <h2>Project Overview</h2>
+            <p>
+                This was a project for a client, but the project fell through so it got cancelled. I finished it for the fun of it. <a href="https://github.com/j5x/ProjectLauncher">GitHub</a>
+            </p>
+        </div>
+
+        <aside class="project-details">
+            <div class="detail">
+                <h3>Role</h3>
+                <p>Game Developer</p>
+            </div>
+            <div class="detail">
+                <h3>Duration</h3>
+                <p>2+ weeks</p>
+            </div>
+            <div class="detail">
+                <h3>Client</h3>
+                <p>Client/Personal Project</p>
+            </div>
+            <div class="detail">
+                <h3>Tools Used</h3>
+                <div class="tags">
+                    <span>C#</span>
+                    <span>Jetbrains Rider</span>
+                </div>
+            </div>
+        </aside>
+    </section>
+
+    <section>
+        <h2>Concept & Planning</h2>
+        <p>
+            I wasn't sure on how to approach the creation of a launcher, so I went through some of the launcher I have myself and studied them.
+            After some trial and error with my wireframe I came to a agreeable concept.
+        </p>
+    </section>
+
+    <section>
+        <h2>Launcher Breakdown</h2>
+        <p> 
+           I saw on a forum that its easiest to store a zipped build on a cloud storage where you have easy access too. 
+            I tried putting it on google but because of the 50MB verification on there I couldnt download the file without verifying, so I looked around for other cloud storages and found dropbox.
+            Dropbox allowed me to store the zipped build and create a download link. I then wrote a code that extracts the zip after downloading the file.
+            It then automatically saves the downloaded location and when you press launch it grabs the .exe file from the saved dir for the launch of the project.
+        </p>
+        <div class="gallery">
+            <div>
+                <img src="img/GameLauncher/downloadfunction.png">
+                <p class="caption">Download and Extraction code</p>
+            </div>
+            <div>
+                <img src="img/GameLauncher/LaunchFunction.png">
+                <p class="caption">Launch Code</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Development</h2>
+        <p>
+            
+        </p>
+        <div class="gallery">
+            <div>
+                <img src="img/AdvancedMeleeSystem/parryblockcode.png">
+                <p class="caption">The code</p>
+            </div>
+            <div>
+                <img src="img/AdvancedMeleeSystem/ablockingandparryingradiuscrop.PNG">
+                <p class="caption">In editor look</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical Challenges</h2>
+        <p>
+           I first tried to use google drive which didnt work, I wrote an API for it but after i researched some more I figured out that it was easier to use either github or dropbox.
+        </p>
+        <div class="gallery">
+            <div>
+                <img src="img/GameLauncher/GoogleDriveAPI.png">
+                <p class="caption">Google Drive API Attempt</p>
+            </div>
+            <div>
+                <img src="img/GameLauncher/GLCode.jpg">
+                <p class="caption">Downloading through Github</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Simple Product Showcase</h2>
+        <video controls width="100%" preload="metadata">
+            <source src="img/GameLauncher/finalproduct.mp4" type="video/mp4">
+            "Your browser does not support the video tag."
+        </video>
+        <p class="caption">Final rendered scene with all effects applied</p>
+    </section>
+    
+    <section>
+        <div class="tags">
+            <span>C#</span>
+            <span>Developer</span>
+        </div>
+    </section>
+
+    <section class="next-project">
+        <h3>Next Project</h3>
+        <div class="next-card">
+            <img src="img/neonsitebackground.jpg" alt="Next project preview" />
+            <div class="next-info">
+                <h4>Operation Starfall</h4>
+                <a href="projectgame3.html">View Project →</a>
+            </div>
+        </div>
+    </section>
+</main>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const header = document.querySelector(".project-header");
+        const bg = header.getAttribute("data-bg");
+        if (bg) {
+            header.style.setProperty("--header-bg", `url(${bg})`);
+            header.style.backgroundImage = `url(${bg})`;
+            header.style.backgroundSize = "cover";
+            header.style.backgroundPosition = "center";
+        }
+    });
+</script>
+
+</body>
+</html>
